@@ -15,6 +15,13 @@
   "demands": [],
   "inputs": [
     {
+      "name": "indetifiers",
+      "type": "multiLine",
+      "label": "Host name(s) to generate SSL certificates",
+      "defaultValue": "",
+      "required": true
+    },
+    {
       "name": "variable1",
       "type": "filePath",
       "label": "Path to Solution File",
@@ -31,6 +38,9 @@
     }
   ],
   "instanceNameFormat": "certes-ssl",
-  "execution": { "Node": { "target": "certes-ssl.js" } }
-
+  "execution": {
+    "Node": {
+      "target": "certes-ssl.js"
+    }
+  }
 }
